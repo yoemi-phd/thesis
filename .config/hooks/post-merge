@@ -9,7 +9,7 @@
 # The only difference with the original file resides in the definition of
 # the 'prefixes' variable.
 #
-prefixes="paper"
+prefixes="doc"
 for pref in $prefixes
 	do
 	git log -1 --date=short \
