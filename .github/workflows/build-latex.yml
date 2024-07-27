@@ -65,13 +65,13 @@ jobs:
           use_github_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Upload PDF to release
-        if: github.event_name == 'push'
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: doc/${{ env.DOC }}.pdf
-          asset_name: ${{ env.DOC }}.pdf
-          tag: ${{ steps.release.outputs.tag_name }}
-          overwrite: true
-          body: ""
+      # - name: Upload PDF to release
+      #  if: github.event_name == 'push'
+      #  uses: svenstaro/upload-release-action@v2
+      #  with:
+      #    repo_token: ${{ secrets.GITHUB_TOKEN }}
+      #    file: doc/${{ env.DOC }}.pdf
+      #    asset_name: ${{ env.DOC }}.pdf
+      #    tag: ${{ steps.release.outputs.tag_name }}
+      #    overwrite: true
+      #    body: ""
