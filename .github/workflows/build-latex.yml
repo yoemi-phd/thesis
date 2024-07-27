@@ -23,7 +23,7 @@ jobs:
         with:
           root_file: |
             ${{ env.DOC }}.tex
-          working_directory: DOC
+          working_directory: doc
           extra_system_packages: "git patch"
           latexmk_shell_escape: true
           pre_compile: git config --global --add safe.directory /github/workspace
