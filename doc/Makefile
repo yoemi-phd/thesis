@@ -26,12 +26,12 @@
 TEXINPUTS += :./dia:./gnuplot:./images:./modules
 export TEXINPUTS
 
-SRC	= Document.tex
-LATEX	= latex -output-format=dvi
-PDFLATEX= pdflatex
-BIBTEX	= bibtex
-XDVI	= xdvi -paper us
-DVIPDF  = dvipdfm -p letter
+SRC			= thesis.tex
+LATEX		= latex -output-format=dvi
+PDFLATEX	= pdflatex
+BIBTEX		= bibtex
+XDVI		= xdvi -paper us
+DVIPDF  	= dvipdfm -p letter
 
 COPY     = if test -r $(<:%.tex=%.toc); then cp $(<:%.tex=%.toc) $(<:%.tex=%.toc.bak); fi
 RERUN    = "(There were undefined (references|citations)|Rerun to get (cross-references|the bars) right)"
