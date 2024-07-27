@@ -72,6 +72,6 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: doc/${{ env.DOC }}.pdf
           asset_name: ${{ env.DOC }}.pdf
-          tag: ${{ steps.release.outputs.tag_name }}
+          # tag: ${{ steps.release.outputs.tag_name }}
           overwrite: true
           body: ""
