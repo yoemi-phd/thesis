@@ -26,7 +26,7 @@
 TEXINPUTS += :./dia:./gnuplot:./images:./modules
 export TEXINPUTS
 
-SRC			= thesis.tex
+SRC			= main.tex
 LATEX		= latex -output-format=dvi
 PDFLATEX	= pdflatex
 BIBTEX		= bibtex
